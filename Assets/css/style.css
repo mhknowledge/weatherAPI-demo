@@ -71,7 +71,7 @@ input {
     background-image: url(../images/smbCloud.JPG);
     background-repeat:repeat-y;
     /* background-size: cover; */
-    /* background-blend-mode: lighten; */
+    background-blend-mode: lighten;
 }
 .search h1 {
     line-height: 30px;
