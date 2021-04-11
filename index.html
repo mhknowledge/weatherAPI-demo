@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/80833262c1.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../weatherAPI-demo/Assets/css/style.css">
+    <title>Weather Dash</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Weather Dashboard</h1>
+        <h2 class= "currentTime"></h2>
+    </header>
+    <div class="container">
+        <div class="search">
+            <div class="row">
+                <h1>City Search:</h1>
+            </div>
+            <div class="row">
+                <input type="text" class="searchInput" id='srch-gmap'placeholder="Type Your City Here: ">
+                <button type="submit" class="searchBtn">Search
+                <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="historyItems"></div>
+        </div>
+        <div class="col-two-container">
+            <div class="forecast">
+                <div class="row">
+                    <h1 class="locationName"><strong>City Name</strong></h1>
+                    <h1 class="currentDate"></h1>
+                    <img class="weatherIcon"></img>
+                </div>
+                <div class="row">
+                    <p class="temp"><strong>Temperature:</strong></p>
+                </div>
+                <div class="row">
+                    <p class="humidity"><strong>Humidity:</strong></p>
+                </div>
+                <div class="row">
+                    <p class="windSpeed"><strong>Wind Speed:</strong></p>
+                </div>
+                <div class="row">
+                    <p class="uvIndex"><strong>UV Index:</strong></p>
+                </div>
+            </div>
+            <div class="five-day-container">
+                <h1 class="dayForecast">5-Day Forecast:</h1>
+                <div class="card-row">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="./Assets/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYwwQ-wTWZ6jI75jcsRz4if7dv30i5evo&libraries=places&callback=activatePlacesSearch"></script>
+
+</html>
